@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{choral}[2024/05/20 Choral Listings package]
+
+\RequirePackage{listings}
+
+\lstdefinelanguage{Choral}{
+  morekeywords={class,else,extends,if,implements,interface,new,null,private,%
+      protected,public,abstract,final,static,return,super,this,try,catch,void,%
+      enum,switch,case,default,throw,throws,with,forall,in},%
+  otherkeywords={>>,::,@},%
+  sensitive,%
+	morecomment=[l]//,%
+	morecomment=[s]{/*}{*/},%
+	morestring=[b]",%
+  morestring=[b]',%
+  moredelim=[is][]{\#}{\#}%
+}[keywords,comments,strings]%
